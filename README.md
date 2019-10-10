@@ -38,7 +38,7 @@ Enjoy your `pstrace-1.0.0-win64.msi` file!
 Adapt "Visual Studio 15 2017 Win64" to your target compiler and platform.
 
 For prebuilt releases, see Release page:
-https://github.cert.corp/CERT/PSTrace/releases
+https://github.com/airbus-cert/PSTrace/releases
 
 ## How
 

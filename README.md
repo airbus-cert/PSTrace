@@ -32,12 +32,12 @@ cmake -G "Visual Studio 15 2017 Win64" ..\ptrace
 cmake --build . --target package --config release
 ```
 
-Enjoy pstrace-1.0.0-win64.msi file.
+Enjoy pstrace-1.0.1-win64.msi file.
 
 Adapt "Visual Studio 15 2017 Win64" to your target compiler and platform.
 
 For pre build Release, see Release page:
-https://github.cert.corp/CERT/PSTrace/releases
+https://github.com/airbus-cert/PSTrace/releases
 
 # How
 

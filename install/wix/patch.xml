@@ -1,0 +1,15 @@
+<CPackWiXPatch>
+	<CPackWiXFragment Id="#PRODUCT">
+		<Component Id="EnvVar" KeyPath="yes" Guid="946e5348-7a9e-482f-b793-ff398813a8db" Directory="INSTALL_ROOT" Feature="ProductFeature">
+			<Environment Id='UpdatePath' Name='PATH' Action='set' Permanent='yes' System='yes' Part='last' Value='[INSTALL_ROOT]' />
+			<Environment Id="APPDOMAIN_MANAGER_ASM" Name="APPDOMAIN_MANAGER_ASM" Value="PSTrace, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b44324e6b8871d77" Action="create"  System="yes" Permanent="no"/>
+			<Environment Id="APPDOMAIN_MANAGER_TYPE" Name="APPDOMAIN_MANAGER_TYPE" Value="PSTrace.PSTrace"  System="yes" Action="create" Permanent="no"/>
+		</Component>
+		<CustomAction Id="AddToGac" ExeCommand="cmd /c GACInstaller.exe PSTrace.dll" Directory="INSTALL_ROOT" Execute="deferred" Impersonate='no' Return="check"/>
+		<InstallExecuteSequence>
+			<Custom Action="AddToGac" Before="WriteEnvironmentStrings">
+				NOT Installed
+			</Custom>
+		</InstallExecuteSequence>
+	</CPackWiXFragment>
+</CPackWiXPatch>

@@ -26,7 +26,7 @@ http://wixtoolset.org/releases/v3.11.1/stable
 
 Now do the following magic commands:
 ```bash
-git clone https://github.cert.corp/CERT/PSTrace --recursive
+git clone https://github.com/CERT/PSTrace --recursive
 mkdir build_ptrace
 cd build_ptrace
 cmake -G "Visual Studio 15 2017 Win64" ..\ptrace
